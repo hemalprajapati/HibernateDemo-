@@ -8,9 +8,9 @@ public class ManageUser {
 		UserReposity ME = new UserReposity();
 
 		/* Add few employee records in database */
-		Integer empID1 = ME.addEmployee("Hemal", "Prajapati", 1000);
-		Integer empID2 = ME.addEmployee("Ravi", "Suthar", 5000);
-		Integer empID3 = ME.addEmployee("John", "Paul1", 10000);
+		Integer empID1 = ME.addEmployee("Hemal1", "Prajapati", 1000);
+		Integer empID2 = ME.addEmployee("Ravi1", "Suthar", 5000);
+		Integer empID3 = ME.addEmployee("Johny", "Paul1", 10000);
  
 		/* List down all the employees */
 		ME.listEmployees();
