@@ -1,9 +1,5 @@
 package com.netweb.xml;
 
-import java.net.UnknownHostException;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
@@ -12,7 +8,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
-public class Student {
+public class MongoDB {
 
 	public static void main(String sp[]){
 
