@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	 "-//Hibernate/Hibernate Mapping DTD//EN"
+	 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="com.netweb.IO.Students" table="Students">
+      
+		<meta attribute="class-description">
+         This class contains the Students detail. 
+		</meta>
+      
+		<!-- id element maps the unique ID attribute in class to the primary key of the database table. -->
+		<id name="rollNumber" type="int" column="RoleId">
+			<generator class="native"/>
+		</id>
+      
+		<property name="firstName" column="FirstName" type="string"/>
+		<property name="lastName" column="LastName" type="string"/>
+		<property name="address" column="Address" type="string"/>
+	</class>
+</hibernate-mapping>

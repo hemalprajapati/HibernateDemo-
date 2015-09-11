@@ -1,0 +1,62 @@
+shallow comparison :
+========================
+When ever we compare reference of two objects instead of comparing value, the comparison is called as shallow comparison. For example (X==Y) is shallow comparison.
+
+
+Legacy Classes :
+=====================
+
+Before collection came in to the picture, there were some classes which were used to store the objects. This classes are called Legacy classes. For example Vector is a legacy class. All the legacy classes have been resturcutred in collection framework.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Quetions :
+ Difference between Comparable and Comparator.
+ Public private protected and no modifier.
+ OOPS concept
+ Stictft in java
+ Orderby And Group By
+ Clustered Index and Non Clustered Index
+ Get yesterday,last month orders
+ 
+ 
+ 
+ 
+ 
+---Maven Commands
+1) -X install 
+
+
+***Beans Scope in Spring 
+--> Spring provides facility to specify bean scope. It provides us the facility so that you can specify weather new bean object should be created every time or there should be only single bean should be created.
+--> There are two types of beans 
+	1) Proto type bean : If you Declare your bean as a proto type, New bean instance will be created everytime you ask for it
+    2) Singleton bean : If you Declare any bean as a single ton bean, Only one instance of that bean will be created and will be returned when you ask for it.
+	
+** Lazy loading and Pre Loading of Beans in Spring
+--> When ever we create an object of ApplicationContext interface, all the beans specified in the spring configuration file will be instanciated by ApplicationContext interface. This kind of bean creation is called Pre Loading of beans.
+--> In case of the lazy loading of beans, beans will be created when you ask for it. This can also be achieved using BeanFactory interface. When you use this interface,loading of the beans will always be lazy
+
+*** Bean life cycle
+Spring instanciate and destorys bean. So spring is responsible for managing life cycle of a bean. Many times we may require to perform certain operation after bean is created or before bean is destroyed.
+--You can specify init and destory methods in your configuration file.
+-- AbstractApplicationContext class has a method called RegisterShutdownHook. This class has implemented ApplicationContext interface. So when the main method ends, all the beans inside your factory will be destroyed.
+
+
+** InitializingBean and DisposableBean interface
+-- If we want to performa certain operation when the bean is initialized or when the bean is about to destroyed, This interfaces are used. Implementing these interfaces provides methods which we can override and perform operations we want.
+-- Same functionality can be achieved using  @PostConstruct and @PreDestory annotations. We need to make an entry for using thse annotations.
+
+
+** Bean Post Processor
+If we want to perform certain operation on initialization and destruction of all the objects, this interface can be used. You need to implement this interface and make its entry in the config file. So when ever any object is initialized or destroyed, method of implemented class will be called.
